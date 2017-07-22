@@ -1,0 +1,28 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package start;
+
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ *
+ * @author MUGESH KANNA
+ */
+public class map {
+  public static void main(String []k)
+  {
+    Map<Integer,String> m=new HashMap<Integer,String>();
+    m.put(100,"Amit");
+    m.put(101,"Vijay");
+    m.put(102,"Rahul");
+    for(Map.Entry m1:m.entrySet())
+    {
+        System.out.println(m1.getKey()+" "+m1.getValue());
+    }
+  }
+    
+}

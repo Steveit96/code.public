@@ -1,0 +1,29 @@
+public class steve {
+    public static void main(String p[])
+    {
+        int j,temp;
+        int a[]={1,2,3,4,5};
+       // Scanner t=new Scanner(System.in);
+        System.out.println("Enter the elements:");
+       for(int i:a)
+       {
+           System.out.println(a[i]); 
+        }
+        System.out.println("after sorting:");
+        for(int i:a)
+        {
+            for(j=i+1;j<5;j++)
+            {
+                 if(a[i]<a[j])
+                 {
+                     temp=a[i];
+                     a[i]=a[j];
+                     a[j]=temp;
+                 }
+            }
+        }
+       for(int i:a)
+       {
+        System.out.print(" "+a[i]);   
+       }
+    }

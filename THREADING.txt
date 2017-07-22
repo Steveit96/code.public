@@ -1,0 +1,36 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package start;
+
+/**
+ *
+ * @author MUGESH KANNA
+ */
+public class threading1 {
+    public static void main(String h[])
+    {
+    thre t=new thre();
+    Thread r=new Thread(t);
+    r.run();
+}
+}
+class thre implements Runnable{
+    public void run()
+    {
+        try
+        {
+        for(int i=0;i<=10;i++)
+        {
+            Thread.sleep(2000);
+            System.out.println(i);
+        }
+        }
+        catch(Exception e)
+                {
+                System.out.println(e);
+                }
+    }
+}

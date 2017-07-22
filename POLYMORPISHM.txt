@@ -1,0 +1,34 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package start;
+
+/**
+ *
+ * @author MUGESH KANNA
+ */
+public class poly {
+public static void main(String h[])
+{
+    //int c;
+    sum2 p=new sum1();
+    System.out.println("sum is:"+p.addval(10,6));
+}
+}
+class sum2
+{
+    public int addval(int a,int b)
+    {
+        return a+b;
+    }
+}
+class sum1 extends sum2
+{
+    public void addval(int c)
+    {
+       System.out.println("sum is:"+c);
+    }
+    
+}

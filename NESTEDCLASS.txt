@@ -1,0 +1,53 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package start;
+
+/**
+ *
+ * @author MUGESH KANNA
+ */
+public class nestclass {
+    public static void main(String a[])
+    {
+       A obj=new A();
+     A.B G=  obj.new B();
+   A.B.C f=  G.new C();
+   A.B.C.D k=f.new D();
+       obj.disp2();
+       G.disp1();
+       f.disp();
+       k.disp4();
+ 
+    }
+ }
+class A
+{
+    class B
+    {
+        class C
+        {
+            class D
+            {
+                void disp4()
+                {
+                    System.out.println("tythty");
+                }
+            }
+            public void disp()
+            {
+                System.out.println("hai");
+            }
+        }
+         public void disp1()
+            {
+                System.out.println("hello");
+            }
+    }
+    public void disp2()
+     {
+        System.out.println("welcom");
+     }
+}

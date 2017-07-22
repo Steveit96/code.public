@@ -1,0 +1,67 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package start;
+
+/**
+ *
+ * @author MUGESH KANNA
+ */
+public class foodchain {
+public static void main(String A[])
+{
+    lion g=new lion();
+    g.disp1();
+    g.disp2();
+    g.disp();
+    kite k=new kite();
+    k.disp3();
+    k.disp4();
+    k.disp5();
+    //k.disp();
+}
+}
+class grass
+{
+  void disp()
+  {
+     System.out.println("Grass!");
+  }
+}
+class goat extends grass
+{
+    void disp1()
+    {
+      System.out.println("goat Ate Grass!");  
+    }
+}
+class lion extends goat
+{
+    void disp2()
+    {
+      System.out.println("lion Ate Goat!");  
+    }
+}
+class mouse extends grass
+{
+    void disp3()
+    {
+        System.out.println("mouse Ate Grass!");
+    }
+}
+class snake extends mouse
+{
+    void disp4()
+    {
+        System.out.println("snake Ate mouse!");
+    }
+}
+class kite extends snake
+{
+    void disp5()
+    {
+        System.out.println("kite Ate snake!");
+    }
+}

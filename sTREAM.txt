@@ -1,0 +1,32 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package start;
+
+import java.io.FileOutputStream;
+
+/**
+ *
+ * @author MUGESH KANNA
+ */
+public class stream3 {
+    public static void main(String k[])
+    {
+        try
+        {
+        FileOutputStream y=new FileOutputStream("E:\\lexl.txt");
+        String h="stephan";
+        byte a[]=h.getBytes();
+        y.write(a);
+        System.out.println("hi");
+        }
+        catch(Exception e)
+        {
+          System.out.println(e);  
+        }
+        
+    }
+    
+}

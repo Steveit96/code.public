@@ -1,0 +1,42 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package start;
+
+/**
+ *
+ * @author MUGESH KANNA
+ */
+public class interf {
+    public static void main(String h[])
+    {
+     hos u=new l();
+     u.run(2);
+     hos u1=new m();
+    u1.run(2);
+    m u2=new m();
+   u2.run();
+    }
+}
+interface hos
+{
+public void run(int a);
+}
+class l implements hos
+{
+  public void run(int a)
+    {
+       System.out.println("time:10.00"); 
+    }
+}
+class m extends l
+{
+    
+  public  void run()
+    {
+       System.out.println("when?");   
+    }
+}
+

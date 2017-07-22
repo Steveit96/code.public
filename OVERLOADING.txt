@@ -1,0 +1,40 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package start;
+
+/**
+ *
+ * @author MUGESH KANNA
+ */
+public class overload {
+    public static void main(String A[])
+    {
+        sum o=new sum(10,12);
+        o.display();
+        sum o1=new sum(o);
+        o1.display();
+        
+    }
+}
+class sum
+{
+    int a;
+    int b;
+    sum(int x,int y)
+    {
+        a=x;
+        b=y;
+    }
+    sum(sum s)
+    {
+       a=s.a;
+       b=s.b;
+    }
+    public void display()
+    {
+      System.out.println("sum"+(a+b));
+    }
+}
